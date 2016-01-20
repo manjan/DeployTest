@@ -1,6 +1,5 @@
 !/bin/bash
-# RHEL / CentOS / Fedora Linux restart command
-        RESTART="/sbin/service httpd restart"
+RESTART="/sbin/service httpd restart"
 
 # uncomment if you are using Debian / Ubuntu Linux
 #RESTART="/etc/init.d/httpd -k restart"
