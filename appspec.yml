@@ -5,10 +5,12 @@ files:
     destination: /var/www/html/testdeploy/
 permissions:
   - object: /var/www/html/testdeploy/havas-scripts/restart.sh
-    owner: root
-    mode: 777
-    type:
-      - file
+     pattern: "**"
+     owner: apache
+     group: apache
+     mode: 755
+     type:
+       - file
 hooks:
 AfterInstall:
   - location: /havas-scripts/restart-apache.sh
