@@ -3,13 +3,6 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/testdeploy2/
-permissions:
-  - object: /var/www/html/havas-scripts/
-    pattern: "**"
-    owner: ec2-user
-    mode: 777
-    type:
-      - file
 hooks:
 AfterInstall:
   - location: /havas-scripts/restart-apache.sh
