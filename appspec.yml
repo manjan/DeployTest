@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/testdeploy/
+    destination: /var/www/html/testdeploy2/
 permissions:
   - object: /var/www/html/havas-scripts/
     pattern: "*.sh"
