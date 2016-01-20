@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/html/testdeploy/
 permissions:
-  - object: /var/www/html/testdeploy/havas-scripts/restart.sh
+  - object: /var/www/html/testdeploy/havas-scripts/newrestart.sh
     owner: apache
     group: apache
     mode: 777
@@ -12,6 +12,6 @@ permissions:
       - file
 hooks:
 AfterInstall:
-  - location: /havas-scripts/restart-apache.sh
+  - location: /havas-scripts/newrestart.sh
     timeout: 300
     runas: root
