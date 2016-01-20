@@ -18,5 +18,5 @@ $PGREP ${HTTPD}
 #if [ $? -ne 0 ] # if apache not running
 #then
 # restart apache
-sudo $RESTART
+$RESTART
 #fi
