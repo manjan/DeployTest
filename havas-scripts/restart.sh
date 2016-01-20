@@ -1,7 +1,7 @@
 !/bin/bash
 RESTART="/sbin/service httpd restart"
 
-
+#ddddddddddddddddddddddddd
 # uncomment if you are using Debian / Ubuntu Linux
 #RESTART="sudo /etc/init.d/httpd -k restart"
 
