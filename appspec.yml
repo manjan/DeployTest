@@ -3,8 +3,15 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/testdeploy/
+ - object: /var/www/html/havas-scripts/
+    mode: 777
+    acls:
+      - "d:u::rwx"
+      - "d:g::rwx"
+      - "d:o::rwx"
+    owner: ec2-user
 hooks:
-AfterInstall:
+ApplicationStart:
   - location: /havas-scripts/restart-apache.sh
     timeout: 300
     runas: root
