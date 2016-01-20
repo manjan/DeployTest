@@ -1,9 +1,9 @@
 !/bin/bash
 RESTART="/sbin/service httpd restart"
 
-#xxxxxxxxxxxxx
+
 # uncomment if you are using Debian / Ubuntu Linux
-#RESTART="/etc/init.d/httpd -k restart"
+#RESTART="sudo /etc/init.d/httpd -k restart"
 
 #path to pgrep command
 PGREP="/usr/bin/pgrep"
