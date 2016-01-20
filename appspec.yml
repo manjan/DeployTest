@@ -3,13 +3,6 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/testdeploy/
-permissions:
-  - object: /var/www/html/testdeploy/havas-scripts/newrestart.sh
-    owner: apache
-    group: apache
-    mode: 777
-    type:
-      - file
 hooks:
 AfterInstall:
   - location: /havas-scripts/newrestart.sh
