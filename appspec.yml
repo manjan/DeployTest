@@ -4,8 +4,7 @@ files:
   - source: /
     destination: /var/www/html/testdeploy2/
 permissions:
-  - object: /var/www/html/havas-scripts/
-    pattern: "*.sh"
+  - object: /var/www/html/havas-scripts/restart.sh
     mode: 777
     type:
       - file
@@ -13,4 +12,4 @@ hooks:
 ApplicationStart:
   - location: /havas-scripts/restart-apache.sh
     timeout: 300
-    runas: root
+    runas: rootcd ha	
