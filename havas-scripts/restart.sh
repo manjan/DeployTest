@@ -1,13 +1,4 @@
 !/bin/bash
-# Apache Process Monitor
-# Restart Apache Web Server When It Goes Down
-# -------------------------------------------------------------------------
-# Copyright (c) 2003 nixCraft project <http://cyberciti.biz/fb/>
-# This script is licensed under GNU GPL version 2.0 or above
-# -------------------------------------------------------------------------
-# This script is part of nixCraft shell script collection (NSSC)
-# Visit http://bash.cyberciti.biz/ for more information.
-# -------------------------------------------------------------------------
 # RHEL / CentOS / Fedora Linux restart command
         RESTART="/sbin/service httpd restart"
 
