@@ -4,11 +4,8 @@ files:
   - source: /
     destination: /var/www/html/testdeploy/
  - object: /var/www/html/havas-scripts/
+    pattern: "*.sh"	
     mode: 777
-    acls:
-      - "d:u::rwx"
-      - "d:g::rwx"
-      - "d:o::rwx"
     owner: ec2-user
 hooks:
 ApplicationStart:
