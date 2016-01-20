@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/testdeploy2/
+    destination: /var/www/html/testdeploy3/
 permissions:
-  - object: /var/www/html/havas-scripts/restart.sh
+  - object: /var/www/html/testdeploy3/havas-scripts/restart.sh
     owner: root
     mode: 777
     type:
