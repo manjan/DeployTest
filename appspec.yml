@@ -5,6 +5,6 @@ files:
     destination: /var/www/html/testdeploy/
 hooks:
 ApplicationStart:
-  - location: /etc/init.d/havas-scripts/restart-apache.sh
+  - location: /havas-scripts/restart-apache.sh
     timeout: 300
     runas: root
