@@ -5,8 +5,8 @@ files:
     destination: /var/www/html/testdeploy2/
 permissions:
   - object: /var/www/html/havas-scripts/
-    pattern: "*.sh"
-    owner: root
+    pattern: "**"
+    owner: ec2-user
     mode: 777
     type:
       - file
