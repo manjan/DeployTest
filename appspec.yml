@@ -5,4 +5,4 @@ files:
     destination: /var/www/html/testdeploy/
 hooks:
 AfterInstall:
-  - location: /home/deploy-scripts/apache-restart/restart.sh
+  - location: /etc/init.d/havas-scripts/restart-apache.sh
