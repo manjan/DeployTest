@@ -3,3 +3,6 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/testdeploy/
+hooks:
+AfterInstall:
+  - location: /home/deploy-scripts/apache-restart/restart.sh
