@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/html/testdeploy/
 permissions:
-  - object: /var/www/html/testdeploy/touchfile.sh
+  - object: /var/www/html/assets
     owner: ec2-user
     mode: 777
     type:
