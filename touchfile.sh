@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo touch thisisanewfile.txt
+sudo touch success.txt
