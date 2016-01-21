@@ -4,9 +4,9 @@ files:
   - source: /
     destination: /var/www/html/testdeploy/
 permissions:
-  - object: /var/www/html/assets
-    owner: ec2-user
-    owner: ec2-user
+  - object: /var/www/html/testdeploy/assets
+    owner: root
+    owner: root
     mode: 777
     type:
       - directory
