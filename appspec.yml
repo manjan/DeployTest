@@ -1,18 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /
     destination: /var/www/html/testdeploy/
-permissions:
-  - object: /var/www/html/testdeploy/touchfile.sh
-    owner: apache
-    group: apache
-    mode: 777
-    type:
-      - file
 hooks:
-
-AfterInstall:
-  - location: /var/www/html/testdeploy/touchfile.sh
-    timeout: 300
-    runas: root
+  BeforeInstall:
+    - location: /var/www/html/testdeploy/touchfile.sh
+      timeout: 400
+      runas: root
