@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo systemctl restart httpd.service
+exec sudo systemctl restart httpd.service
