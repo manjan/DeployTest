@@ -6,9 +6,10 @@ files:
 permissions:
   - object: /var/www/html/assets
     owner: ec2-user
+    owner: ec2-user
     mode: 777
     type:
-      - file
+      - directory
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
