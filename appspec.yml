@@ -1,11 +1,18 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /
     destination: /var/www/html/testdeploy/
 hooks:
-  BeforeInstall:
-    - location: /var/www/html/testdeploy/touchfile.sh
-      timeout: 400
-      runas: root
-	
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 300
+      runas: root
+
