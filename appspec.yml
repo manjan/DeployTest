@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /var/www/html/testdeploy/
 permissions:
-  - object: /var/www/html/testdeploy/havas-scripts/newrestart.sh
+  - object: /var/www/html/testdeploy/touchfile.sh
     owner: apache
     group: apache
     mode: 777
@@ -13,6 +13,6 @@ permissions:
 hooks:
 
 AfterInstall:
-  - location: /havas-scripts/newrestart.sh
+  - location: /havas-scripts/touchfile.sh
     timeout: 300
     runas: root
